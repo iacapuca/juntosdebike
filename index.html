@@ -22,6 +22,11 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,6 +59,9 @@
                         </li>
                         <li class="page-scroll">
                             <a href="#portfolio">O que é?</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#roteiro">Roteirização</a>
                         </li>
                         <li class="page-scroll">
                             <a href="#about">Baixar</a>
@@ -124,11 +132,24 @@
                             <img src="img/portfolio/circus.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
 
+
+        <!-- Roteirização -->
+        <section class="success" id="roteiro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Roteirizador</h2>
+                        <hr class="star-light">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- About Section -->
         <section class="success" id="about">
             <div class="container">
@@ -138,21 +159,21 @@
                         <hr class="star-light">
                     </div>
                 </div>
-                    <div class="row">
+                <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-4 text-center">
                         <a href="#" class="btn btn-lg btn-outline" style="width: 290px">
                             <i class="fa fa-download"></i> Download para Android
                         </a>
-                        </div>
-                
+                    </div>
+
                     <div class="col-md-4 text-center">
                         <a href="#" class="btn btn-lg btn-outline" style="width: 290px">
                             <i class="fa fa-download"></i> Download para iOS
                         </a>
                     </div>
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -487,6 +508,11 @@
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
 
+        <!-- Leaflet -->
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+        <script src="js/leaflet-routing-machine.min.js"></script>
+        <script src="js/lrm-graphhopper-1.1.2.min.js"></script>
+
         <!-- Plugin JavaScript -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
@@ -498,6 +524,10 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="js/freelancer.js"></script>
+
+        <!-- Scripts -->
+        <script src="js/scripts.js"></script>
+
 
 </body>
 

@@ -476,3 +476,9 @@ footer .footer-below {
 .fa-pc:before {
   content: "\f109";
 }
+
+#map { height: 400px; }
+
+.leaflet-routing-alt {
+    color: black;
+}
