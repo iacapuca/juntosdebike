@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
 }
 
+
 p {
     font-size: 20px;
 }
@@ -36,6 +37,16 @@ h6 {
     font-weight: 700;
 }
 
+hr.heart{
+    content: "\f004"; 
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -48,7 +59,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f206";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -58,12 +69,13 @@ hr.star-primary:after {
 }
 
 hr.star-light {
+    background-color: #2effa4;
     border-color: #fff;
 }
 
 hr.star-light:after {
+    background-color: #2effa4;
     color: #fff;
-    background-color: #18bc9c;
 }
 
 hr.star-primary {
@@ -82,7 +94,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #2effa4;
 }
 
 header .container {
@@ -181,7 +193,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #2effa4;
 }
 
 section.success a,
